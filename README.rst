@@ -15,7 +15,7 @@ Usage
 
 First, add pytest-suites to your conftest.py
 
-::
+.. code-block:: python
 
    # conftest.py
 
@@ -24,7 +24,7 @@ First, add pytest-suites to your conftest.py
 Next you will likely want to define a suite or two. Also do this in ``conftest.py``
 
 
-::
+.. code-block:: python
 
    # conftest.py
 
@@ -35,7 +35,9 @@ Next you will likely want to define a suite or two. Also do this in ``conftest.p
    add_suite(name="extended", pattern="*", tags={'mode': 'extended'})
 
    
-Meanwhile, add some tests::
+Meanwhile, add some tests:
+
+.. code-block:: python
   
   # my_test.py
 
@@ -66,7 +68,9 @@ currently being executed and access the suite's tags dictionary. This can be
 useful when you want to occasionally test less or greater functionality within a
 given test. For example, you may frequently want `test_my_feature` to check the
 common case but right before a release you may the same test to be more
-exhaustive.::
+exhaustive.
+
+.. code-block:: python
 
   def test_advanced_feature1(suite):
       mode = suite.tags.get('mode', 'basic')
