@@ -1,0 +1,14 @@
+/build
+*.pyc
+.DS_Store
+.project
+.settings
+.idea
+.pydevproject
+.DS_Store
+.venv
+*.egg-info
+.cache
+/dist
+/tests/data/random_seed
+
